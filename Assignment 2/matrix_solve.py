@@ -157,7 +157,7 @@ if __name__ == "__main__":
     x_grid, snap_times, history = solve_pde(u_init, mu, n, dt, tf)
 
     # Create the output folder if it does not already exist.
-    Path("Numerical Analysis").mkdir(exist_ok=True)
+    Path("Assignment 2/Numerical Analysis").mkdir(exist_ok=True)
 
     # Used Claude to help make plots look nicer
     plt.figure(figsize=(8, 5))
@@ -174,7 +174,7 @@ if __name__ == "__main__":
     plt.title("Solution at x = 0 vs time (IMEX finite difference)")
     plt.grid(True)
     plt.legend()
-    plt.savefig("Numerical Analysis/Heat_Eq_Solns.pdf")
+    plt.savefig("Assignment 2/Numerical Analysis/Heat_Eq_Solns.pdf")
     plt.show()
 
     # plt.xlabel("x")
@@ -182,7 +182,7 @@ if __name__ == "__main__":
     # plt.title("Heat Equation Solutions with Implicit-Explicit Finite Difference methods")
     # plt.grid(True)
     # plt.legend()
-    # plt.savefig("Numerical Analysis/Heat_Eq_Solns.pdf")
+    # plt.savefig("Assignment 2/Numerical Analysis/Heat_Eq_Solns.pdf")
     # plt.show()
 
     # Run convergence tests.
@@ -206,7 +206,7 @@ if __name__ == "__main__":
     plt.grid(True, which="both")
     plt.legend()
     plt.tight_layout()
-    plt.savefig("Numerical Analysis/Time_Convergence.pdf")
+    plt.savefig("Assignment 2/Numerical Analysis/Time_Convergence.pdf")
     plt.show()
 
     # Plot space convergence.
@@ -226,6 +226,6 @@ if __name__ == "__main__":
     plt.grid(True, which="both")
     plt.legend()
     plt.tight_layout()
-    plt.savefig("Numerical Analysis/Space_Convergence.pdf")
+    plt.savefig("Assignment 2/Numerical Analysis/Space_Convergence.pdf")
     plt.show()
     
